@@ -7,6 +7,7 @@ import FetchReview from '../Components/Review/FetchReview';
 import ReviewForm from '../Components/Review/ReviewForm';
 import Reviews from '../Components/Review/Reviews';
 import Service from '../Components/Review/Service';
+import Updatereview from '../Components/Review/Updatereview';
 import Services from '../Components/Service/Services';
 import ServiceSection from '../Components/Service/ServiceSection';
 import ThreeService from '../Components/Service/ThreeService';
@@ -62,7 +63,13 @@ export const routes = createBrowserRouter([
             },
             {
                 path:'/myreview',
-                element:<FetchReview></FetchReview>
+                element:<FetchReview></FetchReview>,
+                
+            },
+            {
+                path:'/update/:id',
+                element:<Updatereview></Updatereview>,
+                loader: ({params}) => fetch(`http://localhost:5000/reviews/${params.id}`)
             }
         ]
     }

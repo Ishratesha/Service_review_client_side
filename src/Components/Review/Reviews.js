@@ -1,9 +1,11 @@
 import React from 'react';
 import { useContext } from 'react';
+import { Link, useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../Context/Authprovider';
 
-const Reviews = ({review,handleDelete,}) => {
-  const {_id,serviceName,customer,date,textarea}=review
+const Reviews = ({review,handleDelete,handleStatusUpdate}) => {
+  
+  const {_id,serviceName,customer,date,textarea,status}=review
  const {user} = useContext(AuthContext)
   return (
     <div>
@@ -41,9 +43,21 @@ const Reviews = ({review,handleDelete,}) => {
           </blockquote>
           <label>
                     <button onClick={() => handleDelete(_id)} className='btn btn-ghost'>X</button>
-                    {/* <button 
-                onClick={() => handleStatusUpdate(_id)}
-                className="btn btn-ghost btn-xs">{status ? status : 'pending'}</button> */}
+                     <button>
+                {/* onClick={() => handleStatusUpdate(_id)}
+                className="btn btn-ghost btn-xs">{status ? status : 'pending'} */}
+                {/* The button to open modal */}
+               
+{/* The button to open modal */}
+<Link to={`/update/${_id}`}>
+                            <button className="btn">
+                                edit review
+                            </button>
+                        </Link>
+
+{/* Put this part before </body> tag */}
+
+                </button> 
                 </label>
         </div>
 

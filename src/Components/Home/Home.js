@@ -2,6 +2,7 @@ import React from 'react';
 import ServiceSection from '../Service/ServiceSection';
 
 import Benner from './Benner';
+import Tool from './Tool';
 
 const Home = () => {
     return (
@@ -10,7 +11,7 @@ const Home = () => {
              
          <ServiceSection></ServiceSection>
          
-         
+         <Tool></Tool>
         </div>
     );
 };

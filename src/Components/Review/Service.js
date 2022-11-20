@@ -1,5 +1,7 @@
 import React from 'react';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
 import{useLoaderData}from 'react-router-dom'
+import FetchReview from './FetchReview';
 import ReviewForm from './ReviewForm';
 import Reviews from './Reviews';
 
@@ -8,6 +10,7 @@ const Reviwe = () => {
     return (
         <div>
             <div className="card lg:card-side bg-base-100 shadow-xl">
+            
   <figure><img src={picture} alt="Album"/></figure>
   <div className="card-body">
     <h2 className="card-title">{service_name}</h2>
@@ -19,7 +22,7 @@ const Reviwe = () => {
     </div>
   </div>
 </div>
-
+<FetchReview></FetchReview>
 <ReviewForm></ReviewForm>
             
         </div>
