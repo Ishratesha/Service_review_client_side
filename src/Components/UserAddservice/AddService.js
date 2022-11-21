@@ -8,7 +8,7 @@ const AddService = () => {
         event.preventDefault();
         console.log(service);
 
-        fetch('http://localhost:5000/services', {
+        fetch('https://app-server-side.vercel.app/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -18,7 +18,7 @@ const AddService = () => {
         .then(res => res.json())
         .then(data => {
             if(data.acknowledged){
-                alert('User added successfully');
+                alert(' successful');
                 event.target.reset();
             }
         })
@@ -78,11 +78,11 @@ const AddService = () => {
             </div>
             <div class="flex flex-col">
               <label class="leading-loose">Set Price</label>
-              <input onBlur={handleInputBlur}name ='balance'type="text" class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="Img"/>
+              <input onBlur={handleInputBlur}name ='balance'type="text" className=" divide-amber-50 dark:text-gray-400 px-4 py-2 border focus:ring-gray-500 focus:border-gray-500 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="Img"/>
             </div>
             <div class="flex flex-col">
               <label class="leading-loose">Rating</label>
-              <input onBlur={handleInputBlur}name ='rating'type="text" class="px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="Img"/>
+              <input onBlur={handleInputBlur}name ='rating'type="text" className="  dark:text-gray-400 px-4 py-2 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="Img"/>
             </div>
             <div class="flex items-center space-x-4">
              

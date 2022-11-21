@@ -5,14 +5,14 @@ const FetchReview = () => {
     const [review, setreview] = useState([]);
     
     useEffect( () =>{
-        fetch('http://localhost:5000/reviews')
+        fetch('https://app-server-side.vercel.app/reviews')
         .then(res =>res.json())
         .then(data => setreview(data))
     }, []);
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to cancel this order');
         if (proceed) {
-            fetch(`http://localhost:5000/reviews/${id}`, {
+            fetch(`https://app-server-side.vercel.app/reviews/${id}`, {
                 method: 'DELETE',
                 headers: {
                    // authorization: `Bearer ${localStorage.getItem('genius-token')}`

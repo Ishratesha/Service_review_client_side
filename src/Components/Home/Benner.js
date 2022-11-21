@@ -7,7 +7,7 @@ const Benner = () => {
   <div className="hero-content flex-col lg:flex-row-reverse">
     <img src="https://as2.ftcdn.net/v2/jpg/03/64/91/07/1000_F_364910752_7QAtpgNCSoqFTIxPzvlO26fT6ao9Fp5C.jpg" className="max-w-sm rounded-lg shadow-2xl" />
     <div>
-      <h1 className="text-5xl font-bold">Zahan's Kitchen!</h1>
+      <h1 className="text-5xl font-bold"><span className='text-5xl font-bold text-orange-600'>Zahan's</span>  Kitchen!</h1>
       <p className="py-6">Provide the best food and service on your events.</p>
       <button className="btn btn-warning">Get Started</button>
     </div>
@@ -26,9 +26,8 @@ const Benner = () => {
 
       <blockquote class="sm:col-span-2">
         <p class="text-xl font-medium sm:text-2xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-          perspiciatis cumque neque ut nobis excepturi, quasi iure quisquam
-          autem alias.
+        Julia Child was a cooking legend. An American famous female chef, she is best known for popularizing French cuisine among mainstream households in the United States and making gourmet cooking accessible to everyone.
+She had a wonderfully flippant and confident attitude, experimenting with food, accepting mistakes, and putting passion ahead of perfection. 
         </p>
 
         <cite class="mt-8 inline-flex items-center not-italic">

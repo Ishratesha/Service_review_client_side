@@ -9,7 +9,7 @@ const ServiceSection = () => {
     const [services, setServices] = useState([]);
     
     useEffect( () =>{
-        fetch('http://localhost:5000/threeservice')
+        fetch('https://app-server-side.vercel.app/threeservice')
         .then(res =>res.json())
         .then(data => setServices(data))
     }, []);

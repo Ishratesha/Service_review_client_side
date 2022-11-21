@@ -1,5 +1,6 @@
 import React, { Children } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
+import Blog from '../Components/Home/Blog';
 import Home from '../Components/Home/Home';
 import Login from '../Components/Login/Login';
 import Register from '../Components/Register/Register';
@@ -48,18 +49,18 @@ export const routes = createBrowserRouter([
             {
                 path:'/services',
                 element:<Services></Services>,
-                loader:()=>fetch('http://localhost:5000/services')
+                loader:()=>fetch('https://app-server-side.vercel.app/services')
             },
            
             {
                 path:'/reviwe/:id',
                 element:<Service></Service>,
-                loader:({params})=>fetch (`http://localhost:5000/service/${params.id}`)
+                loader:({params})=>fetch (`https://app-server-side.vercel.app/service/${params.id}`)
             },
             {
                 path:'/reviwe/:id',
                 element:<ReviewForm></ReviewForm>,
-                loader:({params})=>fetch (`http://localhost:5000/service/${params.id}`)
+                loader:({params})=>fetch (`https://app-server-side.vercel.app/service/${params.id}`)
             },
             {
                 path:'/myreview',
@@ -69,7 +70,10 @@ export const routes = createBrowserRouter([
             {
                 path:'/update/:id',
                 element:<Updatereview></Updatereview>,
-                loader: ({params}) => fetch(`http://localhost:5000/reviews/${params.id}`)
+                loader: ({params}) => fetch(`https://app-server-side.vercel.app/reviews/${params.id}`)
+            },{
+                path:'/blog',
+                element:<Blog></Blog>
             }
         ]
     }
