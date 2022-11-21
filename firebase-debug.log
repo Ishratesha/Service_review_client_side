@@ -1,14 +1,13 @@
-[debug] [2022-11-21T19:12:37.905Z] ----------------------------------------------------------------------
-[debug] [2022-11-21T19:12:37.908Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
-[debug] [2022-11-21T19:12:37.908Z] CLI Version:   10.9.2
-[debug] [2022-11-21T19:12:37.908Z] Platform:      win32
-[debug] [2022-11-21T19:12:37.908Z] Node Version:  v14.17.1
-[debug] [2022-11-21T19:12:37.915Z] Time:          Tue Nov 22 2022 01:12:37 GMT+0600 (Bangladesh Standard Time)
-[debug] [2022-11-21T19:12:37.915Z] ----------------------------------------------------------------------
+[debug] [2022-11-21T20:20:27.522Z] ----------------------------------------------------------------------
+[debug] [2022-11-21T20:20:27.524Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ASUS\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2022-11-21T20:20:27.525Z] CLI Version:   11.16.1
+[debug] [2022-11-21T20:20:27.525Z] Platform:      win32
+[debug] [2022-11-21T20:20:27.525Z] Node Version:  v19.1.0
+[debug] [2022-11-21T20:20:27.525Z] Time:          Tue Nov 22 2022 02:20:27 GMT+0600 (Bangladesh Standard Time)
+[debug] [2022-11-21T20:20:27.525Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-11-21T19:12:37.918Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2022-11-21T19:12:37.943Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-11-21T19:12:37.943Z] > authorizing via signed-in user (ishratjahan22222@gmail.com)
+[debug] [2022-11-21T20:20:27.533Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-21T20:20:27.534Z] > authorizing via signed-in user (ishratjahan22222@gmail.com)
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -24,3 +23,21 @@ Before we get started, keep in mind:
 
   * You are currently outside your home directory
 
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-11-21T20:20:45.081Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-11-21T20:20:46.243Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-11-21T20:20:46.243Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project e-learn-56a1c (E-learn) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
