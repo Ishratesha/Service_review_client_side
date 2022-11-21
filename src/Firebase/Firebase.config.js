@@ -5,14 +5,12 @@ import { getAnalytics } from "firebase/analytics";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-// REACT_APP_apiKey=AIzaSyBfB6RMIGLWCy0EE7-6mIA6il4Q1VxJgCY
-// REACT_APP_authDomain=jahankitchen-a78bc.firebaseapp.com
-// REACT_APP_projectId=jahankitchen-a78bc
-// REACT_APP_storageBucket=jahankitchen-a78bc.appspot.com
-// REACT_APP_messagingSenderId=873462740917
-// REACT_APP_appId=1:873462740917:web:8fe376ad3217ba374ecbfc
-// REACT_APP_measurementId=G-H4KFY6903S
+// apiKey: "AIzaSyB8U6Q8opM-OoZ-qG559gURTJXL-KkkD3I",
+//   authDomain: "zahankitchen-3e7cc.firebaseapp.com",
+//   projectId: "zahankitchen-3e7cc",
+//   storageBucket: "zahankitchen-3e7cc.appspot.com",
+//   messagingSenderId: "39916541109",
+//   appId: "1:39916541109:web:bf96917e400bb18ee59afc"
 const firebaseConfig = {
   apiKey: process.env.REACT_APP_apiKey,
   authDomain: process.env.REACT_APP_authDomain,
